@@ -1,11 +1,251 @@
-h1 {
-color: blue;
-text-align: center;
-background-color: greenyellow;
-font-size: 120px;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.header-white {
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
 
+.nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    flex: 0 0 200px;
+    text-align: center;
+}
 
+.nav-link:hover {
+    text-decoration: underline;
+}
 
+.home-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 80px;
+    margin: 0;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+    flex: 1;
+    white-space: nowrap;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: transparent;
+    font-size: 40px;
+    margin: 30px auto;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-wrapper {
+    flex: 0 0 740px;
+    height: auto;
+}
+
+.video-thumb {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.text-wrapper {
+    flex: 1;
+    max-width: 1400px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 26px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text-wrapper p {
+    margin: 0;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-size: 80px;
+    margin: 0;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.photos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.photo {
+    flex: 1;
+    max-width: 280px;
+    height: auto;
+    object-fit: cover;
+}
+
+.histoire-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.histoire-texte {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 1.8; /* ← espace entre les lignes pour la lisibilité */
+    text-align: justify;
+    margin: 0;
+}
+
+.histoire-figure {
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+.histoire-photo {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.section-titre {
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    width: 100%;
+}
+
+.piece-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.piece-photo {
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.piece-texte h5 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.piece-texte p {
+    color: rgb(200, 200, 200);
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+    text-align: justify;
+}
+
+.da-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.da-container.reverse {
+    flex-direction: row-reverse; /* ← photo à droite */
+}
+
+.da-photo {
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.da-texte h5 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.da-texte p {
+    color: rgb(200, 200, 200);
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+    text-align: justify;
+}
